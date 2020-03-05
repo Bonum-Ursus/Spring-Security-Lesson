@@ -1,4 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);
+body{
+    background: -webkit-linear-gradient(left, #020202f3, #8c3dd6d3);
+    background: linear-gradient(to right, #020202f3, #8c3dd6d3);
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+.container{
+    height: 25rem;
+    max-width: 25rem;
+    background-color: rgba(87, 45, 191, 0.08);
+    margin: 0 auto;
+    margin-top: 10rem;
+    /*border: 1px solid black;*/
+    border-radius: 2rem/2rem;
+    box-shadow: 10px 10px 20px 4px slateblue;
+    position: relative;
+    font-size:  24px;
+}
+.innerContainer{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 1.3rem;
+
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
 
 .failed {
+    color: red;
+}
+
+.bSignIn {
+    outline-color: transparent;
+    background: #a185d6;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    font-size: 18px;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    font-family: 'Pacifico', cursive;
+    transition: all 0.2s;
+}
+.bLogout {
+    outline-color: transparent;
+    background: #a185d6;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    font-size: 18px;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    font-family: 'Pacifico', cursive;
+    transition: all 0.2s;
+}
+.bSignIn:hover{
+    border-color: rgba(255,255,255,1);
+    background: #4ebb89;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+    transform : translateY(-3px);
+}
+.bLogout:hover{
+    border-color: rgba(255,255,255,1);
+    background: #4ebb89;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+    transform : translateY(-3px);
+}
+@media all and (max-width:30em){
+     .bLogout{
+        display:block;
+        margin:0.2em auto;
+    }
+}
+
+.inputForm{
+    width: 15rem;
+    height: 2rem;
+    background-color:transparent;
+    color: white;
+    border-radius: 2em/3em;
+    text-align: center;
+    outline-color: transparent;
+}
+.iLogout{
     color: green;
 }

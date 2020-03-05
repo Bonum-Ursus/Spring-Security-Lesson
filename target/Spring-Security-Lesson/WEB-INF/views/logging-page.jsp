@@ -15,19 +15,28 @@
     <title>Logging</title>
 </head>
 <body>
-<form:form action="${pageContext.request.contextPath}/authenticateTheUser" method="post">
-    <h1>SigIn</h1>
-    <c:if test="${param.error != null}">
-        <i class="failed">Wrong username or password. Try it again.</i>
-    </c:if>
-    <p>
-        User name: <input type="text" name="username">
-    </p>
-    <p>
-        Password: <input type="password" name="password">
-    </p>
-    <input type="submit" value="SignIn">
-</form:form>
+<div class="container">
+    <div class="innerContainer">
+        <form:form action="${pageContext.request.contextPath}/authenticateTheUser" method="post">
+            <h1>Sign In</h1>
+            <c:if test="${param.error != null}">
+                <i class="failed">Wrong username or password.</i>
+            </c:if>
+
+            <c:if test="${param.logout != null}">
+                <i class="iLogout">You have been log out.</i>
+            </c:if>
+
+            <p>
+                Username: <input class="inputForm" placeholder="Type your username here" type="text" name="username">
+            </p>
+            <p>
+                Password: <input class="inputForm" placeholder="Type your password here" type="password" name="password">
+            </p>
+            <input class="bSignIn" type="submit" value="Sign In">
+        </form:form>
+    </div>
+</div>
 
 </body>
 </html>
