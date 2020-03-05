@@ -7,19 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="486ce9c1-1974-4bb5-b1cb-987c56615227" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BonumUrsus/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BonumUrsus/config/MyDispatcherServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BonumUrsus/controller/MyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home-page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/BonumUrsus/config/DemoSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/BonumUrsus/config/SecurityWebApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/logging-page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/CSS/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BonumUrsus/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BonumUrsus/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BonumUrsus/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BonumUrsus/controller/MyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring-Security-Lesson/WEB-INF/classes/com/BonumUrsus/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring-Security-Lesson/WEB-INF/classes/com/BonumUrsus/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring-Security-Lesson/WEB-INF/classes/com/BonumUrsus/controller/MyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring-Security-Lesson/WEB-INF/classes/com/BonumUrsus/controller/MyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring-Security-Lesson/WEB-INF/lib/spring-aop-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring-Security-Lesson/WEB-INF/lib/spring-beans-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring-Security-Lesson/WEB-INF/lib/spring-context-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring-Security-Lesson/WEB-INF/lib/spring-core-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring-Security-Lesson/WEB-INF/lib/spring-expression-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring-Security-Lesson/WEB-INF/lib/spring-jcl-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring-Security-Lesson/WEB-INF/lib/spring-web-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring-Security-Lesson/WEB-INF/lib/spring-webmvc-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BonumUrsus/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/BonumUrsus/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BonumUrsus/controller/MyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/BonumUrsus/controller/MyController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +38,7 @@
       <list>
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -56,12 +64,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.31" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.31" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -169,7 +179,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583391732054</updated>
-      <workItem from="1583391741770" duration="2748000" />
+      <workItem from="1583391741770" duration="13016000" />
     </task>
     <servers />
   </component>
@@ -177,29 +187,77 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-782" y="394" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1583405868379">
+      <screen x="-1024" y="0" width="1024" height="1280" />
+    </state>
+    <state x="-782" y="394" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583405868379" />
     <state x="-1024" y="294" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583393953251">
       <screen x="-1024" y="0" width="1024" height="1280" />
     </state>
     <state x="-1024" y="294" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583393953251" />
-    <state x="-707" y="349" key="#com.intellij.ide.util.MemberChooser" timestamp="1583393615313">
+    <state x="-707" y="349" key="#com.intellij.ide.util.MemberChooser" timestamp="1583405442764">
       <screen x="-1024" y="0" width="1024" height="1280" />
     </state>
-    <state x="-707" y="349" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583393615313" />
-    <state width="981" height="216" key="GridCell.Tab.0.bottom" timestamp="1583392140689">
+    <state x="-707" y="349" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583405442764" />
+    <state x="-732" y="394" key="FileChooserDialogImpl" timestamp="1583405946066">
       <screen x="-1024" y="0" width="1024" height="1280" />
     </state>
-    <state width="981" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583392140689" />
-    <state width="981" height="216" key="GridCell.Tab.0.center" timestamp="1583392140689">
+    <state x="-732" y="394" key="FileChooserDialogImpl/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583405946066" />
+    <state width="666" height="361" key="GridCell.Tab.0.bottom" timestamp="1583408892364">
       <screen x="-1024" y="0" width="1024" height="1280" />
     </state>
-    <state width="981" height="216" key="GridCell.Tab.0.center/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583392140689" />
-    <state width="981" height="216" key="GridCell.Tab.0.left" timestamp="1583392140689">
+    <state width="666" height="361" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583408892364" />
+    <state width="666" height="361" key="GridCell.Tab.0.center" timestamp="1583408892364">
       <screen x="-1024" y="0" width="1024" height="1280" />
     </state>
-    <state width="981" height="216" key="GridCell.Tab.0.left/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583392140689" />
-    <state width="981" height="216" key="GridCell.Tab.0.right" timestamp="1583392140689">
+    <state width="666" height="361" key="GridCell.Tab.0.center/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583408892364" />
+    <state width="666" height="361" key="GridCell.Tab.0.left" timestamp="1583408892364">
       <screen x="-1024" y="0" width="1024" height="1280" />
     </state>
-    <state width="981" height="216" key="GridCell.Tab.0.right/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583392140689" />
+    <state width="666" height="361" key="GridCell.Tab.0.left/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583408892364" />
+    <state width="666" height="361" key="GridCell.Tab.0.right" timestamp="1583408892364">
+      <screen x="-1024" y="0" width="1024" height="1280" />
+    </state>
+    <state width="666" height="361" key="GridCell.Tab.0.right/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583408892364" />
+    <state width="666" height="361" key="GridCell.Tab.1.bottom" timestamp="1583408892364">
+      <screen x="-1024" y="0" width="1024" height="1280" />
+    </state>
+    <state width="666" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583408892364" />
+    <state width="666" height="361" key="GridCell.Tab.1.center" timestamp="1583408892364">
+      <screen x="-1024" y="0" width="1024" height="1280" />
+    </state>
+    <state width="666" height="361" key="GridCell.Tab.1.center/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583408892364" />
+    <state width="666" height="361" key="GridCell.Tab.1.left" timestamp="1583408892364">
+      <screen x="-1024" y="0" width="1024" height="1280" />
+    </state>
+    <state width="666" height="361" key="GridCell.Tab.1.left/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583408892364" />
+    <state width="666" height="361" key="GridCell.Tab.1.right" timestamp="1583408892364">
+      <screen x="-1024" y="0" width="1024" height="1280" />
+    </state>
+    <state width="666" height="361" key="GridCell.Tab.1.right/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583408892364" />
+    <state width="666" height="361" key="GridCell.Tab.2.bottom" timestamp="1583408892365">
+      <screen x="-1024" y="0" width="1024" height="1280" />
+    </state>
+    <state width="666" height="361" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583408892365" />
+    <state width="666" height="361" key="GridCell.Tab.2.center" timestamp="1583408892364">
+      <screen x="-1024" y="0" width="1024" height="1280" />
+    </state>
+    <state width="666" height="361" key="GridCell.Tab.2.center/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583408892364" />
+    <state width="666" height="361" key="GridCell.Tab.2.left" timestamp="1583408892364">
+      <screen x="-1024" y="0" width="1024" height="1280" />
+    </state>
+    <state width="666" height="361" key="GridCell.Tab.2.left/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583408892364" />
+    <state width="666" height="361" key="GridCell.Tab.2.right" timestamp="1583408892365">
+      <screen x="-1024" y="0" width="1024" height="1280" />
+    </state>
+    <state width="666" height="361" key="GridCell.Tab.2.right/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583408892365" />
+    <state x="-1011" y="282" key="SettingsEditor" timestamp="1583396229880">
+      <screen x="-1024" y="0" width="1024" height="1280" />
+    </state>
+    <state x="-1011" y="282" key="SettingsEditor/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583396229880" />
+    <state x="-1024" y="341" key="new project wizard" timestamp="1583405977349">
+      <screen x="-1024" y="0" width="1024" height="1280" />
+    </state>
+    <state x="-1024" y="341" key="new project wizard/0.0.1920.1040/-1024.0.1024.1280@-1024.0.1024.1280" timestamp="1583405977349" />
   </component>
 </project>

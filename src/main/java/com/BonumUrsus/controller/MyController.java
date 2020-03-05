@@ -10,4 +10,9 @@ public class MyController {
     public String getHomePage(){
         return "home-page";
     }
+
+    @GetMapping(value = "/login")
+    public String goToLoggingPage(){
+        return "logging-page";
+    }
 }
