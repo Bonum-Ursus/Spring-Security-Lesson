@@ -27,7 +27,7 @@ public class AppConfig implements WebMvcConfigurer {
     @Autowired
     private Environment env;
 
-    private Logger log = LoggerFactory.getLogger(AppConfig.class.getName());
+    private static Logger log = LoggerFactory.getLogger(AppConfig.class.getName());
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
