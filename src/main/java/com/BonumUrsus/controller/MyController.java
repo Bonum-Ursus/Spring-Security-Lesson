@@ -15,4 +15,19 @@ public class MyController {
     public String goToLoggingPage(){
         return "logging-page";
     }
+
+    @GetMapping(value = "/leaders")
+    public String goToLeadersPage(){
+        return "leaders-page";
+    }
+
+    @GetMapping(value = "/admins")
+    public String goToAdminPage(){
+        return "admin-page";
+    }
+
+    @GetMapping(value = "/access-denied")
+    public String redirectToAccessDeniedPage(){
+        return "access-denied-page";
+    }
 }

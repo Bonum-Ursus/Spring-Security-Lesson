@@ -19,26 +19,29 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter implements 
 
         auth.inMemoryAuthentication()
                 .withUser(users.username("Johny").password("test123").roles("EMPLOYEE"))
-                .withUser(users.username("Garry").password("test123").roles("MANAGER"))
-                .withUser(users.username("Barbosa").password("test123").roles("ADMIN"));
+                .withUser(users.username("Garry").password("test123").roles("MANAGER", "EMPLOYEE"))
+                .withUser(users.username("Barbosa").password("test123").roles("ADMIN", "EMPLOYEE"));
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .anyRequest().authenticated()
+//                .anyRequest().authenticated()
+                .antMatchers("/").hasRole("EMPLOYEE")
+                .antMatchers("/leaders").hasRole("MANAGER")
+                .antMatchers("/admins").hasRole("ADMIN")
                 .and()
                 .formLogin()
                 .loginPage("/login")
                 .loginProcessingUrl("/authenticateTheUser")
                 .permitAll()
-                .and().logout().permitAll();
+                .and().logout().permitAll()
+                .and().exceptionHandling().accessDeniedPage("/access-denied");
+        ;
     }
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web
-                .ignoring()
-                .antMatchers("/resources/**");
+        web.ignoring().antMatchers("/resources/**");
     }
 }

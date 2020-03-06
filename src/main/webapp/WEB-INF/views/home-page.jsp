@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 
 <html>
 <head>
@@ -16,7 +17,19 @@
 
 </head>
     <body>
+        <hr>
         <h1>Welcome home page</h1>
+        <hr>
+        <h2>User: <security:authentication property="principal.username" /></h2>
+        <h2>Role(s) : <security:authentication property="principal.authorities" /></h2>
+        <hr>
+        <p>
+            <a href="${pageContext.request.contextPath}/leaders"> LeaderShip Meeting</a>
+        </p>
+        <p>
+            <a href="${pageContext.request.contextPath}/admins"> For Admins</a>
+        </p>
+        <hr>
     <form:form action="${pageContext.request.contextPath}/logout" method="post">
         <input class="bLogout" type="submit" value="Log out">
 
