@@ -23,12 +23,16 @@
         <h2>User: <security:authentication property="principal.username" /></h2>
         <h2>Role(s) : <security:authentication property="principal.authorities" /></h2>
         <hr>
-        <p>
-            <a href="${pageContext.request.contextPath}/leaders"> LeaderShip Meeting</a>
-        </p>
-        <p>
-            <a href="${pageContext.request.contextPath}/admins"> For Admins</a>
-        </p>
+        <security:authorize access="hasRole('MANAGER')">
+            <p>
+                <a href="${pageContext.request.contextPath}/leaders"> LeaderShip Meeting</a>
+            </p>
+        </security:authorize>
+        <security:authorize access="hasRole('ADMIN')">
+            <p>
+                <a href="${pageContext.request.contextPath}/admins"> For Admins</a>
+            </p>
+        </security:authorize>
         <hr>
     <form:form action="${pageContext.request.contextPath}/logout" method="post">
         <input class="bLogout" type="submit" value="Log out">
